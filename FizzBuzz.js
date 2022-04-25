@@ -3,4 +3,5 @@ function fizzBuzz()
 return console.log("Hello World");
 return 5;
 }
-fizzBuzz();
+ a=fizzBuzz();
+ console.log(a);
