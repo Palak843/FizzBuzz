@@ -5,3 +5,4 @@ return 5;
 }
  a=fizzBuzz();
  console.log(a);
+console.log('hi');
