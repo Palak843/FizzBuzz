@@ -1,8 +1,17 @@
 function fizzBuzz()
 {
-a = 5;
 console.log("Hello World");
-console.log(a);
+for (var i = 1; i <=100;i++)
+{
+    if (i%3 === 0)
+    {
+        console.log("Fizz");
+    }
+    else
+    {
+        console.log(i);
+    }
+}
 }
 fizzBuzz();
 
