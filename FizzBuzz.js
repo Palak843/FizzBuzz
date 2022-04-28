@@ -27,27 +27,26 @@ for (var i = 1; i <=100;i++){
     }
     if (i%13 === 0){
         
-        const bIndex = resultString.indexOf("B");
-        
+        const bIndex = arr.findIndex(str => str.startsWith("B"));
 
         if (bIndex === -1){
-            resultString +="Fezz";
+            arr.push("Fezz");
         }
         else{
-            resultString = resultString.slice(0,bIndex)+ "Fezz" + resultString.slice(bIndex);
+            resultString = resultString.slice(0,bIndex).concat("Fezz").concat(resultString.slice(bIndex));
         }
-        const bIndex2 = arr.forEach(checkval)
+       /* const bIndex2 = arr.forEach(checkval) =>
         function checkval(printval)
         {
-            printval.indexOf("B");
+            printval.findIndex("B");
         }
         if (bIndex2 === -1){
             arr.push("Fezz");
         }
         else{
-            console.log(bIndex2)
+            
             resultString = resultString.slice(0,bIndex)+ "Fezz" + resultString.slice(bIndex);
-        }
+        }*/
     }
     if (i%17 === 0){
         arr = arr.reverse();
@@ -57,10 +56,10 @@ for (var i = 1; i <=100;i++){
     {
         arr.push(i)
     }
-    if (resultString === ''){
+    /*if (resultString === ''){
         resultString += i;
-    }
-    console.log(resultString);
+    }*/
+    //console.log(resultString);
     console.log(arr.toString());
 }
 }
